@@ -7,7 +7,7 @@ let colorcito = document.getElementById("defColor");
 let grosor = document.getElementById("defGrosor");
 
 
-canvas.addEventListener("mousedown", function(e)
+canvas.addEventListener("touchstart", function(e)
 {
   x = e.clientX - rect.left;
   y = e.clientY - rect.top;
@@ -16,7 +16,7 @@ canvas.addEventListener("mousedown", function(e)
   
 });
 
-canvas.addEventListener("mousemove", function(e)
+canvas.addEventListener("touchmove", function(e)
 {
   if(dibujando == true)
   {
@@ -28,7 +28,7 @@ canvas.addEventListener("mousemove", function(e)
   console.log('esto es x ' + x);
 });
 
-canvas.addEventListener("mouseup", function(e)
+canvas.addEventListener("touchup", function(e)
 {
   if(dibujando == true)
   {
